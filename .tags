@@ -1,0 +1,97 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CamTarget	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CamTarget.cs	/^public class CamTarget : MonoBehaviour $/;"	class	line:4
+target	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CamTarget.cs	/^	public Transform target;$/;"	field	line:7	class:CamTarget
+camSpeed	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CamTarget.cs	/^	float camSpeed = 50.0f;$/;"	field	line:8	class:CamTarget	file:
+lerpPos	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CamTarget.cs	/^	Vector3 lerpPos;$/;"	field	line:9	class:CamTarget	file:
+Update	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CamTarget.cs	/^	void Update() $/;"	method	line:11	class:CamTarget	file:	signature:()
+CharacterDemoController	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^public class CharacterDemoController : MonoBehaviour $/;"	class	line:7
+animator	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	Animator animator;$/;"	field	line:9	class:CharacterDemoController	file:
+floorPlane	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	public GameObject		floorPlane;\/\/in this demonstration this is set manually, the Retail Ability system has methods for dealing with this automatically via data structures for environments$/;"	field	line:10	class:CharacterDemoController
+WeaponState	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	public int 				WeaponState=0;\/\/unarmed, 1H, 2H, bow, dual, pistol, rifle, spear and ss(sword and shield)$/;"	field	line:12	class:CharacterDemoController
+wasAttacking	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	public bool 			wasAttacking;\/\/ we need this so we can take lock the direction we are facing during attacks, mecanim sometimes moves past the target which would flip the character around wildly$/;"	field	line:13	class:CharacterDemoController
+rotateSpeed	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	float				rotateSpeed = 20.0f; \/\/used to smooth out turning$/;"	field	line:15	class:CharacterDemoController	file:
+movementTargetPosition	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	public Vector3 		movementTargetPosition;$/;"	field	line:17	class:CharacterDemoController
+attackPos	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	public Vector3 		attackPos;$/;"	field	line:18	class:CharacterDemoController
+lookAtPos	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	public Vector3		lookAtPos;$/;"	field	line:19	class:CharacterDemoController
+gravity	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	float				gravity = 0.3f;\/\/unused in this demonstration$/;"	field	line:20	class:CharacterDemoController	file:
+hit	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	RaycastHit hit;$/;"	field	line:22	class:CharacterDemoController	file:
+ray	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	Ray ray;$/;"	field	line:23	class:CharacterDemoController	file:
+rightButtonDown	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	public bool rightButtonDown=false;\/\/we use this to "skip out" of consecutive right mouse down...$/;"	field	line:25	class:CharacterDemoController
+Start	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	void Start () $/;"	method	line:28	class:CharacterDemoController	file:	signature:()
+Update	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	void Update () $/;"	method	line:35	class:CharacterDemoController	file:	signature:()
+OnGUI	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs	/^	void OnGUI()$/;"	method	line:176	class:CharacterDemoController	file:	signature:()
+TurnOffRenderers	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Editor\TurnOffRenderers.cs	/^public class TurnOffRenderers : ScriptableObject$/;"	class	line:8
+MenuDumpModels	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Editor\TurnOffRenderers.cs	/^    static void MenuDumpModels()$/;"	method	line:11	class:TurnOffRenderers	file:	signature:()
+MouseOrbit	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^public class MouseOrbit : MonoBehaviour $/;"	class	line:4
+target	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	public Transform target;$/;"	field	line:6	class:MouseOrbit
+distance	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	float distance = 15f;$/;"	field	line:7	class:MouseOrbit	file:
+xSpeed	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	float xSpeed = 4.0f;$/;"	field	line:8	class:MouseOrbit	file:
+ySpeed	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	float ySpeed = 1.0f;$/;"	field	line:9	class:MouseOrbit	file:
+x	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	float x = 0.0f;$/;"	field	line:10	class:MouseOrbit	file:
+y	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	float y = 2.0f;$/;"	field	line:11	class:MouseOrbit	file:
+Start	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	void Start () $/;"	method	line:14	class:MouseOrbit	file:	signature:()
+LateUpdate	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	void LateUpdate () $/;"	method	line:28	class:MouseOrbit	file:	signature:()
+ClampAngle	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^	float ClampAngle (float angle) $/;"	method	line:61	class:MouseOrbit	file:	signature:(float angle)
+OnGUI	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\MouseOrbit.cs	/^void OnGUI()$/;"	method	line:70	class:MouseOrbit	file:	signature:()
+Outfitter	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^public class Outfitter : MonoBehaviour $/;"	class	line:9
+ac	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^	CharacterDemoController ac;$/;"	field	line:12	class:Outfitter	file:
+oldWeaponIndex	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^	int oldWeaponIndex;$/;"	field	line:13	class:Outfitter	file:
+weapons	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^	public List<WeaponSlot> weapons;$/;"	field	line:15	class:Outfitter
+Start	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^	void Start () $/;"	method	line:18	class:Outfitter	file:	signature:()
+Update	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^	void Update () $/;"	method	line:36	class:Outfitter	file:	signature:()
+WeaponSlot	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^public class WeaponSlot$/;"	class	line:53
+models	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\Outfitter.cs	/^	public List<Renderer> models = new List<Renderer>();$/;"	field	line:56	class:WeaponSlot
+RootMotionOff	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\RootMotionOff.cs	/^public class RootMotionOff : StateMachineBehaviour $/;"	class	line:4
+ColliderTestTime	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\RootMotionOff.cs	/^	public float ColliderTestTime;$/;"	field	line:6	class:RootMotionOff
+OnStateEnter	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\RootMotionOff.cs	/^	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) $/;"	method	line:9	class:RootMotionOff	signature:(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+OnStateExit	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\RootMotionOff.cs	/^	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) $/;"	method	line:20	class:RootMotionOff	signature:(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+SkinnedMeshCombiner	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\SkinnedMeshCombiner.cs	/^public class SkinnedMeshCombiner : MonoBehaviour $/;"	class	line:12
+baseMat	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\SkinnedMeshCombiner.cs	/^ 	Material baseMat;$/;"	field	line:14	class:SkinnedMeshCombiner	file:
+newSkin	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\SkinnedMeshCombiner.cs	/^	SkinnedMeshRenderer newSkin;$/;"	field	line:15	class:SkinnedMeshCombiner	file:
+smRenderers	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\SkinnedMeshCombiner.cs	/^	List<SkinnedMeshRenderer> smRenderers;$/;"	field	line:16	class:SkinnedMeshCombiner	file:
+Start	D:\workspace\Unity Projects\AI Study\Assets\Resources\Models\AllStarCharacterLibrary\Scripts\SkinnedMeshCombiner.cs	/^    void Start() $/;"	method	line:18	class:SkinnedMeshCombiner	file:	signature:()
+MonsterCtrl	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^public class MonsterCtrl : MonoBehaviour$/;"	class	line:4
+_playerTransform	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private Transform _playerTransform;$/;"	field	line:6	class:MonsterCtrl	file:
+_monsterTransform	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private Transform _monsterTransform;$/;"	field	line:7	class:MonsterCtrl	file:
+traceRange	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private double traceRange = 5.0;$/;"	field	line:9	class:MonsterCtrl	file:
+attackRange	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private double attackRange = 2.0;$/;"	field	line:10	class:MonsterCtrl	file:
+_attackrangeDefault	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private const double _attackrangeDefault = 2.0;$/;"	field	line:12	class:MonsterCtrl	file:
+targetVisible	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private bool targetVisible;$/;"	field	line:14	class:MonsterCtrl	file:
+_myState	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private IState _myState;$/;"	field	line:15	class:MonsterCtrl	file:
+_isDie	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private readonly bool _isDie = false;$/;"	field	line:16	class:MonsterCtrl	file:
+Start	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    void Start () {$/;"	method	line:19	class:MonsterCtrl	file:	signature:()
+Update	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    void Update () {$/;"	method	line:29	class:MonsterCtrl	file:	signature:()
+Run	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    private IEnumerator Run()$/;"	method	line:33	class:MonsterCtrl	file:	signature:()
+Detect	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public bool Detect()$/;"	method	line:43	class:MonsterCtrl	signature:()
+GetDistance	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public double GetDistance(Vector3 target)$/;"	method	line:51	class:MonsterCtrl	signature:(Vector3 target)
+GetCheckpoint	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public Vector3 GetCheckpoint()$/;"	method	line:57	class:MonsterCtrl	signature:()
+SetCheckpoint	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public bool SetCheckpoint(Vector3 checkpoint)$/;"	method	line:62	class:MonsterCtrl	signature:(Vector3 checkpoint)
+Move	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public void Move()$/;"	method	line:69	class:MonsterCtrl	signature:()
+PaceAround	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public void PaceAround()$/;"	method	line:75	class:MonsterCtrl	signature:()
+GetTargetVisible	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public bool GetTargetVisible()$/;"	method	line:80	class:MonsterCtrl	signature:()
+ChangeState	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public void ChangeState(IState state)$/;"	method	line:85	class:MonsterCtrl	signature:(IState state)
+IsAttackable	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public bool IsAttackable()$/;"	method	line:90	class:MonsterCtrl	signature:()
+Attack	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\MonsterCtrl.cs	/^    public void Attack()$/;"	method	line:97	class:MonsterCtrl	signature:()
+PlayerCtrl	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\PlayerCtrl.cs	/^public class PlayerCtrl : MonoBehaviour {$/;"	class	line:4
+Start	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\PlayerCtrl.cs	/^	void Start () {$/;"	method	line:7	class:PlayerCtrl	file:	signature:()
+Update	D:\workspace\Unity Projects\AI Study\Assets\Scripts\Ctrl\PlayerCtrl.cs	/^	void Update () {$/;"	method	line:12	class:PlayerCtrl	file:	signature:()
+AttackState	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\AttackState.cs	/^public class AttackState : IState$/;"	class	line:5
+Run	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\AttackState.cs	/^    public void Run(MonsterCtrl monster)$/;"	method	line:7	class:AttackState	signature:(MonsterCtrl monster)
+IState	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\IState.cs	/^public interface IState$/;"	interface	line:3
+Run	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\IState.cs	/^    void Run(MonsterCtrl monster);$/;"	method	line:5	interface:IState	signature:(MonsterCtrl monster)
+PatrolState	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\PatrolState.cs	/^public class PatrolState : IState$/;"	class	line:4
+Run	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\PatrolState.cs	/^    public void Run(MonsterCtrl monster)$/;"	method	line:6	class:PatrolState	signature:(MonsterCtrl monster)
+StateManager	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\StateManager.cs	/^public class StateManager{$/;"	class	line:2
+State	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\StateManager.cs	/^    public enum State$/;"	enum	line:4	class:StateManager
+Patrol	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\StateManager.cs	/^        Patrol,$/;"	enumerator	line:6	enum:StateManager.State	file:
+Trace	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\StateManager.cs	/^        Trace,$/;"	enumerator	line:7	enum:StateManager.State	file:
+Attack	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\StateManager.cs	/^        Attack$/;"	enumerator	line:8	enum:StateManager.State	file:
+StateList	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\StateManager.cs	/^    private static readonly IState[] StateList = {$/;"	field	line:11	class:StateManager	file:
+GetIState	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\StateManager.cs	/^    public static IState GetIState(State state)$/;"	method	line:17	class:StateManager	signature:(State state)
+TraceState	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\TraceState.cs	/^public class TraceState : IState$/;"	class	line:5
+Run	D:\workspace\Unity Projects\AI Study\Assets\Scripts\FSM\TraceState.cs	/^    public void Run(MonsterCtrl monster)$/;"	method	line:7	class:TraceState	signature:(MonsterCtrl monster)
