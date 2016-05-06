@@ -15,7 +15,7 @@ public class TraceState : IState
             }
             else
             {
-                monster.SetCheckpoint(new Vector3());
+                //monster.SetCheckpoint();
                 monster.Move();
                 monster.ChangeState(
                     StateManager.GetIState(StateManager.State.Trace));

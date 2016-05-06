@@ -7,16 +7,20 @@ public class PatrolState : IState
     {
         if (monster.Detect())
         {
+            //Debug.Log("Patrol Detect True");
             if (monster.GetTargetVisible())
             {
+                //Debug.Log("Patrol GetTargetVisible True");
                 if (monster.IsAttackable())
                 {
+                    //Debug.Log("Patrol IsAttackable True");
                     monster.ChangeState(
                         StateManager.GetIState(StateManager.State.Attack));
                 }
                     
                 else
                 {
+                    //Debug.Log("Patrol IsAttackable False");
                     monster.Move();
                     monster.ChangeState(
                         StateManager.GetIState(StateManager.State.Trace));
@@ -26,7 +30,7 @@ public class PatrolState : IState
             else
             {
                 // TODO: Set CheckPoint to Target Position
-                monster.SetCheckpoint(new Vector3());
+                monster.SetCheckpoint(Vector3.one);
                 monster.Move();
                 monster.ChangeState(
                     StateManager.GetIState(StateManager.State.Trace));

@@ -3,26 +3,29 @@ using System.Collections;
 
 public class MonsterCtrl : MonoBehaviour
 {
+    private Animator animator;
     private Transform _playerTransform;
     private Transform _monsterTransform;
+    private Vector3 _checkPoint = Vector3.zero;
 
-    private double traceRange = 5.0;
-    private double attackRange = 2.0;
+    private double traceRange = 5.0f;
+    private double attackRange = 0;
+    public float speed = 0.1f;
 
-    private const double _attackrangeDefault = 2.0;
-    //private Vector3 _relativeTargetPos;
+    private const double _attackrangeDefault = 0;
     private bool targetVisible;
     private IState _myState;
-    private readonly bool _isDie = false;
+    private readonly bool _bDie = false;
 
     // Use this for initialization
     void Start () {
-        _playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        _playerTransform = GameObject.Find("Player").GetComponent<Transform>();
         _monsterTransform = GetComponent<Transform>();
-
+        animator = GetComponentInChildren<Animator>();
         attackRange = _attackrangeDefault;
-        //_relativeTargetPos = new Vector3(0, 0);
-        targetVisible = false;
+        targetVisible = true;
+        ChangeState(StateManager.GetIState(StateManager.State.Patrol));
+        StartCoroutine(Run());
     }
 
     // Update is called once per frame
@@ -32,7 +35,7 @@ public class MonsterCtrl : MonoBehaviour
 
     private IEnumerator Run()
     {
-        while(!_isDie)
+        while(!_bDie)
         {
             _myState.Run(this);
             yield return null;
@@ -42,13 +45,19 @@ public class MonsterCtrl : MonoBehaviour
     // TODO: Detect Player, Update dectect variable and return detect 
     public bool Detect()
     {
-        double distance = Vector3.Distance(_playerTransform.position, _monsterTransform.position);
+        float distance = GetDistance(_playerTransform.position);
         // if detect true and can see target, then update relative target position
-        return distance < traceRange;
+        if (GetTargetVisible() && distance < traceRange)
+        {
+            this._checkPoint = _playerTransform.position;
+            return true;
+        }
+                
+        return false;
     }
 
     // TODO: Get Distance
-    public double GetDistance(Vector3 target)
+    public float GetDistance(Vector3 target)
     {
         return Vector3.Distance(_monsterTransform.position, target);
     }
@@ -56,11 +65,12 @@ public class MonsterCtrl : MonoBehaviour
     // TODO: Find Checkpoint
     public Vector3 GetCheckpoint()
     {
-        return new Vector3();
+        return _checkPoint;
     }
 
     public bool SetCheckpoint(Vector3 checkpoint)
     {
+        this._checkPoint = checkpoint;
         // return value is possible to set checkpoint
         return true;
     }
@@ -68,7 +78,18 @@ public class MonsterCtrl : MonoBehaviour
     // TODO: Move
     public void Move()
     {
-
+        Vector3 direction = _monsterTransform.position - this._checkPoint;
+        if (direction.magnitude > 0.5f)
+        {
+            animator.SetBool("bWalk", true);
+            direction /= direction.magnitude;
+            _monsterTransform.Translate(Time.smoothDeltaTime * direction * speed, Space.Self);
+        }
+        else
+        {
+            animator.SetBool("bWalk", false);
+            _checkPoint = Vector3.zero;
+        }
     }
 
     //
